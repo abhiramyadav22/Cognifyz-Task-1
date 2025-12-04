@@ -1,0 +1,40 @@
+print("Welcome to the Quiz Game!")
+print("Answer the following questions:\n")
+
+score = 0
+
+# Question 1
+answer = input("1) What does CPU stand for? ").strip().lower()
+if answer == "central processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong. The correct answer is Central Processing Unit.")
+print()
+
+# Question 2
+answer = input("2) Which language is known as the mother of all languages? ").strip().lower()
+if answer == "c":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong. One common answer is C.")
+print()
+
+# Question 3
+answer = input("3) Is RAM volatile memory? (yes/no): ").strip().lower()
+if answer == "yes":
+    print("Correct!")
+    score += 1
+else:
+    print("Wrong. Yes, RAM is volatile.")
+print()
+
+print("Your total score:", score, "/ 3")
+
+if score == 3:
+    print("Excellent performance! 🎉")
+elif score == 2:
+    print("Good job!")
+else:
+    print("Better luck next time.")
